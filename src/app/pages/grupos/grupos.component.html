@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="sidebar">
+    <ul class="group-list">
+      <li *ngFor="let group of groups" (click)="selectGroup(group)">
+        <img [src]="group.image" alt="Group Image" class="group-image">
+        <span class="group-name">{{ group.name }}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="content">
+    <ng-container *ngIf="selectedGroup">
+      <div class="selected-group">
+        <div class="selected-group-background" [style.background-image]="'url(' + selectedGroup.backgroundImage + ')'"></div>
+        <img [src]="selectedGroup.image" alt="Selected Group Image" class="selected-group-image">
+        <div class="selected-group-details">
+          <h2>{{ selectedGroup.name }}</h2>
+          <p>{{ selectedGroup.description }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+</head>
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <img src="https://i.pinimg.com/736x/44/01/60/4401600d6cc50cdb2c0cb398633931a4.jpg" class="img-fluid" alt="Imagen del Usuario" style="max-width: 150px; margin-right: 20px;">
+            <h4>Bienvenido {{ userName }}</h4>
+        </div>
+          <p>Fecha y hora de inicio de sesión: {{ loginTime | date:'fullDate' }} {{ loginTime | date:'shortTime'}}</p>
+      </div>
+    </div>
+</body>
+</html>

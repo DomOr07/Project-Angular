@@ -1,0 +1,124 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.Img-Fondo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px); /* Opcional: Para un efecto de desenfoque */
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Opcional: Para un fondo semitransparente */
+  max-width: 500px; /* Reduce el ancho del contenedor */
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 75px; /* Añade margen superior para separarlo del navbar */
+}
+
+h1, h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  text-align: center;
+  color: #333;
+}
+
+.form-container, .list-container {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-img {
+  width: 70px; /* Incrementa el tamaño de la imagen */
+  height: 70px; /* Incrementa el tamaño de la imagen */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.amigo-info {
+  flex-grow: 1;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+
+.button-group {
+  display: flex;
+  gap: 5px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+
+button {
+  display: inline-block; /* Cambia a inline-block para los botones de acción */
+  width: auto;
+  padding: 5px 10px; /* Reduce el padding */
+  margin: 0; /* Elimina el margen superior */
+}
+
+button:hover {
+  background-color: #0056b3;
+}

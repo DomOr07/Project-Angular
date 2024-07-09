@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  height: 100vh; /* Altura completa de la pantalla */
+  margin-top: 66px;
+}
+
+.sidebar {
+  width: 250px; /* Ancho del sidebar */
+  background-color: #4f4c4c;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  top: 66px; /* Ajusta según la altura de tu nav */
+  bottom: 0;
+  z-index: 1000; /* Asegura que el sidebar esté sobre otros elementos */
+}
+
+.group-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Asegura que no haya margen que cause sobresalir */
+}
+
+.group-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(48, 106, 106);
+  background-color: rgb(76, 146, 146);
+  transition: transform 0.3s ease;
+}
+
+.group-list li:hover {
+  background-color: rgb(48, 106, 106);
+  transform: scale(1.1);
+}
+
+.group-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover; /* Para asegurar que la imagen cubra el contenedor sin distorsión */
+}
+
+.group-name {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+}
+
+.content {
+  margin-left: 250px; /* Igual que el ancho de la sidebar */
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 66px); /* Ajustar la altura para que no tape el nav */
+  background-color: rgb(31, 59, 59); /* Color de fondo coherente */
+  position: relative; /* Para asegurar que no sobresalga */
+  color: white; /* Color de texto blanco para que sea legible sobre el fondo oscuro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.selected-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(31, 59, 59);
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.selected-group-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  z-index: 1; /* Asegura que la imagen esté por encima del fondo de portada */
+}
+
+.selected-group-details {
+  z-index: 1; /* Asegura que los detalles estén por encima del fondo de portada */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+}
+
+.selected-group-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Ajusta la opacidad según lo necesites */
+  z-index: 0; /* Asegura que esté detrás de los demás elementos */
+}

@@ -1,0 +1,21 @@
+<div class="perfil-container">
+  <div class="container">
+    <h2 class="Etiqueta">Perfil de Usuario</h2>
+    <img src="assets/Img-User.jpg" alt="Imagen de Perfil" class="Img-user">
+    <br>
+    <br>
+    <p class="Parrafo">Nombre del Usuario: {{ usuarioNombre }} </p>
+    <p class="Subparrafo">Descripción:</p>
+    <textarea id="Subparrafo" class="form-control" [disabled]="!isEditing" [(ngModel)]="descripcion" row="4"></textarea>
+    <br>
+    <p class="Sitios-Web">Sitios Web</p>
+      <div class="container-icon">
+        <img class="icon1" src="assets/sitios-web/Facebook-icon.png" (click)="goToSite('https://www.facebook.com/moises.dominguez.182940?locale=es_LA')">
+        <img class="icon2" src="assets/sitios-web/Discord-icon.png">
+      </div>
+    <br>
+    <button *ngIf="!isEditing" (click)="toggleEdit()" class="Editor-perfil">Editar Perfil</button>
+    <button *ngIf="isEditing" (click)="saveProfile()" class="Guardar-perfil">Guardar</button>
+    <button *ngIf="isEditing" (click)="cancelEdit()" class="Cancelar-perfil">Cancelar</button>
+  </div>
+</div>

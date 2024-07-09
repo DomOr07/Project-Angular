@@ -1,0 +1,98 @@
+.navbar-custom {
+  background-color: #add8e6; /* Celeste suave */
+}
+
+.bg-custom {
+  background-color: #add8e6; /* Celeste suave */
+}
+
+.form-control,
+.form-select {
+  background-color: white;
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes ligeramente redondeados */
+  padding: 8px 12px; /* Espaciado interno */
+  font-family: 'Press Start 2P', cursive; /* Fuente de estilo pixel art */
+  font-size: 12px; /* Tamaño de fuente reducido */
+  margin-right: 8px; /* Espaciado entre los campos */
+  margin-left: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Color del botón Filtrar */
+  border: none;
+  font-family: 'Press Start 2P', cursive; /* Fuente de estilo pixel art */
+  font-size: 12px; /* Tamaño de fuente reducido */
+  padding: 8px 12px; /* Espaciado interno */
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Color del botón Mostrar Personajes */
+  border: none;
+  font-family: 'Press Start 2P', cursive; /* Fuente de estilo pixel art */
+  font-size: 12px; /* Tamaño de fuente reducido */
+  padding: 8px 12px; /* Espaciado interno */
+}
+
+.img-icon {
+  height: 30px;
+  image-rendering: pixelated; /* Asegura que la imagen se vea como pixel art */
+  margin-right: 8px; /* Espaciado a la derecha */
+}
+
+.nav-link {
+  font-family: 'Press Start 2P', cursive; /* Fuente de estilo pixel art */
+  font-size: 12px; /* Tamaño de fuente reducido */
+  margin-right: 10px; /* Espaciado a la derecha */
+}
+
+.navbar-brand label {
+  font-family: 'Press Start 2P', cursive; /* Fuente de estilo pixel art */
+  font-size: 12px; /* Tamaño de fuente reducido */
+  margin-right: 10px; /* Espaciado a la derecha */
+}
+
+.container-fluid .form-control {
+  width: 50px; /* Ajusta el ancho automáticamente */
+}
+
+.container-fluid .form-select {
+  width: 50px; /* Ajusta el ancho automáticamente */
+}
+
+.container-fluid .btn {
+  margin-top: 8px; /* Espaciado superior */
+}
+
+.card {
+  display: inline-block;
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+}

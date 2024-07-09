@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <a class="navbar-brand" [routerLink]="['/login']">
+    <img *ngIf="!userName" src="assets/Logo.jpg" style="height: 40px;">
+    <img *ngIf="userName" src="assets/Img-User.jpg" class="img-fluid profile-image" style="height: 40px;">
+    {{ userName ? userName : 'All Tomorrow' }}
+  </a>
+  <div class="navbar-collapse">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/inicio']">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/consultar']">Consultar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/nuevo']">Nuevo</a>
+      </li>
+    </ul>
+    <div *ngIf="userName" class="button-close">
+      <button (click)="onLogout()">Cerrar sesión</button>
+    </div>
+  </div>
+</nav>
+

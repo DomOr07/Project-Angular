@@ -1,0 +1,53 @@
+<div class="background">
+  <img src="assets/Fondo-Img.jpg" class="Img-Fondo">
+</div>
+
+<div class="container">
+  <h1>Amigos</h1>
+
+  <!-- Formulario para agregar un nuevo amigo -->
+  <div class="form-container">
+    <h2>Agregar Amigo</h2>
+    <form (ngSubmit)="addAmigo()">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" [(ngModel)]="nuevoAmigo.nombre" name="nombre" required>
+      </div>
+      <button type="submit">Agregar</button>
+    </form>
+  </div>
+
+  <!-- Lista de amigos -->
+  <div class="list-container">
+    <h2>Lista de Amigos</h2>
+    <ul>
+      <li *ngFor="let amigo of amigos">
+        <img [src]="amigo.imagenperfil" alt="{{ amigo.nombre }}" class="profile-img">
+        <div class="amigo-info">
+          {{ amigo.nombre }}
+        </div>
+        <div class="button-group">
+          <button (click)="editAmigo(amigo)">Editar</button>
+          <button (click)="deleteAmigo(amigo.id)">Eliminar</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Formulario para editar un amigo existente -->
+  <div *ngIf="amigoEditable" class="form-container">
+    <h2>Editar Amigo</h2>
+    <form (ngSubmit)="updateAmigo()">
+      <div class="form-group">
+        <label for="nombreEditable">Nombre:</label>
+        <input type="text" id="nombreEditable" [(ngModel)]="amigoEditable.nombre" name="nombreEditable" required>
+      </div>
+      <div class="form-group">
+        <label for="imagenPerfilEditable">URL de Imagen de Perfil:</label>
+        <input type="text" id="imagenPerfilEditable" [(ngModel)]="amigoEditable.imagenperfil" name="imagenPerfilEditable">
+      </div>
+      <button type="submit">Actualizar</button>
+      <button type="button" (click)="cancelEdit()">Cancelar</button>
+    </form>
+  </div>
+</div>

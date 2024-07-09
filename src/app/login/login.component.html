@@ -1,0 +1,32 @@
+<app-gif-background></app-gif-background>
+<div class="container_login">
+  <div class="row justify-content-center">
+    <div class="col-md-6 d-flex align-items-center justify-content-end">
+      <div class="d-flex align-items-center">
+        <img src="assets/Img-login.png" class="img-fluid" alt="Logo"
+          style="max-width: 150px; margin-right: 20px;">
+
+        <div class="login_from">
+          <h4 class="header-text">Iniciar Sesión</h4>
+          <form (ngSubmit)="onSubmit()" class="d-flex flex-column mb-3 justify-content-center">
+            <div>
+              <div class="mb-4">
+                <label for="user" class="form-label">UserName</label>
+                <input type="text" class="form-control" id="user" placeholder="UserName" [(ngModel)]="user" name="user">
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="password"
+                  name="password">
+              </div>
+            </div>
+            <div class="p-3 m-0 border-0 bd-example m-0 border-0 padding-1 d-flex gap-3">
+              <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+              <button type="reset" class="btn btn-danger" (click)="onCancel()">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

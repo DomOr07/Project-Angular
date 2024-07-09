@@ -1,0 +1,25 @@
+.login_from {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 60vh;
+  background-color: rgb(159, 229, 176);
+
+  margin-right: -120px;
+  padding-left: 8vh;
+  padding-right: 8vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.container_login {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20vh;
+}
+

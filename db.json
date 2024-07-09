@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "DomOr07",
+      "password": "moiseselias2003",
+      "description": ""
+    }
+  ],
+  "amigos": [
+    {
+      "id": "1",
+      "nombre": "El pepe ",
+      "imagenperfil": "/assets/Img-Friends/ImgOne.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": "JuanPueblo",
+      "imagenperfil": "/assets/Img-Friends/ImgTwo.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "ExoriusSama",
+      "imagenperfil": "/assets/Img-Friends/ImgThree.jpg"
+    }
+  ]
+}
